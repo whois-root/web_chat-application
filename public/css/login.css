@@ -1,0 +1,11 @@
+.formBody {
+    background-color: antiquewhite;
+}
+
+label, .form-group {
+    margin: 5px;
+}
+
+input {
+    width: 30%;
+}

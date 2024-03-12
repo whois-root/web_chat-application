@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/chat_page.css">
+</head>
+
+<body>
+    <section class="msger">
+        <header class="msger-header">
+            <div class="msger-header-member-count">
+                Active Members:
+                <span id="member_count"><%= member_count %></span>
+            </div>
+            <div class="msger-header-account">
+                Hello, <span class="text-center" id="user_name"><%= username %></span>!
+            </div>
+            <div class="msger-header-signout">
+                <a id="signout" class="btn-danger btn" href="/logout/<%= member_id %>">Sign Out</a>
+            </div>
+        </header>
+
+        <main class="msger-chat">
+            <div style="display: none;" class="activity text-center"><i><span class="user_typing"></span> is typing</i></div>
+        </main>
+
+        <form class="msger-inputarea">
+            <input type="text" class="msger-input" id="message" placeholder="Enter your message...">
+            <button type="button" class="msger-send-btn" id="sendMessage">Send</button>
+        </form>
+    </section>
+
+</body>
+
+<script src="https://cdn.socket.io/4.7.4/socket.io.min.js" integrity="sha384-Gr6Lu2Ajx28mzwyVR8CFkULdCU7kMlZ9UthllibdOSo6qAiN+yXNHqtgdTvFXMT4" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="/scripts/chat_page.js"></script>
+
+</html>
