@@ -10,8 +10,11 @@ Welcome to our real-time chat application built with Node.js and Socket.IO. This
 ### Follow these simple steps to set up and run the project locally:
 ```
 Clone the Repository
+
 Connect Database to Server and create table with the specified columns mentioned in the 'db.js' file.
+
 npm install [install all the dependencies]
+
 npx nodemon [go to your browser and write 'http://localhost:4000']
 ```
 # Feel free to explore and customize the application to fit your needs. Happy chatting!
